@@ -153,55 +153,65 @@
 }
 
 .ex-13-button:hover .ex-13-top-white{
-  background: white;
-  animation: 2s moveupdx linear infinite;
+  animation: 2s moveupdx linear ;
 
 }
 
-/* .ex-13-button:hover .ex-13-bottom-white{
-  animation: 2s movedown linear;
-} */
+.ex-13-button:hover .ex-13-bottom-white{
+  animation: 2s movedownsx linear;
+}
 
 @keyframes moveupdx{
   0%{
-    top: default;
+    top: -10px;
+    left: default;
   }
 
   25%{
-    left:160px;
-    top: default;
-  }
-
-
-  90%{
+    top: -10px;
     left: 160px;
-    top:100px;
   }
 
-}
+  40%{
+    top:100%;
+    left: 160px;
+  }
 
-@keyframes movedowndx{
-  25% {
-    bottom:70%;
+  65%{
+    top:100%;
+    left: 0;
+  }
+
+  80%{
+    top: -10px;
+    left: -20px;
   }
 }
 
-/* 
-  50%{
-    left: 70%;
-    bottom: 0%;
-  } */
-  /* 100%{
-    top: 30%;
-    left: 70%;
+@keyframes movedownsx{
+  0%{
+    bottom: -10px;
+    right: default;
+  }
 
-  } */
+  25%{
+    bottom: -10px;
+    right: 160px;
+  }
 
-/* 
-@keyframes movedown{
-  50%{
-    right: 70%;
+  40%{
+    bottom:100%;
+    right: 160px;
+  }
+
+  65%{
+    bottom:100%;
+    right: 0;
+  }
+
+  80%{
+    bottom: -10px;
+    right: -20px;
   }
 }
- */
 
